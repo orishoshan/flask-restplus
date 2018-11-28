@@ -115,6 +115,9 @@ class ModelBase(object):
 
     __str__ = __unicode__
 
+    def __nonzero__(self):
+        return True
+
 
 class RawModel(ModelBase):
     '''
